@@ -1,0 +1,186 @@
+; $Id: theme1000.info, v 1.0
+; $Developer: Jesus
+; $Coder: 
+; $DeupalVer: 7.36
+
+; Theme Info -----------------------------------------------------------------
+; required information about the theme
+
+name = ProCasa
+description = ProCasa Web
+screenshot = screenshot.png
+core = 7.x
+engine = phptemplate
+
+; Stylesheets ----------------------------------------------------------------
+; We use [screen] instead of [all] to avoid browser styles affecting
+; other media types.
+
+stylesheets[screen][]	= css/boilerplate.css
+stylesheets[screen][]	= css/style.css
+stylesheets[screen][]	= css/maintenance-page.css
+stylesheets[screen][]	= css/skeleton.css
+stylesheets[screen][]	= css/custom.css
+stylesheets[screen][]	= css/paver.min.css
+
+; Scripts ---------------------------------------------------------------------
+scripts[]				= js/theme1000.core.js
+scripts[]				= js/jquery.loader.js
+scripts[]				= js/jquery.mobilemenu.js
+scripts[]				= js/jquery.debouncedresize.js
+scripts[]				= js/jquery.easing.js
+scripts[]				= js/jquery.ui.totop.js
+scripts[]				= js/jquery.cookie.js
+scripts[]				= js/jquery.paver.min.js
+scripts[]				= js/tm-stick-up.js
+scripts[]				= js/tformer.js
+scripts[]				= js/device.min.js
+scripts[]				= js/jquery.mousewheel.min.js
+scripts[]				= js/jquery.simplr.smoothscroll.min.js
+scripts[]				= js/migrate.js
+scripts[]				= js/tm-parallax.js
+scripts[]				= js/jquery.ba-throttle-debounce.min.js
+scripts[]				= js/init.js
+
+; Regions --------------------------------------------------------------------
+; these content regions are available for block placement
+; some are special hidden regions: page_top, page_bottom, and help
+
+; these are the stock regions
+regions[header_top]		= Header Top
+regions[header]			= Header
+regions[header_bottom]	= Header Bottom
+regions[menu]			= Menu
+regions[help]			= Help
+
+regions[content_top]	= Content Top
+regions[parallax_one]	= Parallax One
+regions[parallax_three]	= Parallax Three
+regions[parallax_four]	= Parallax Four
+regions[content]		= Content
+regions[parallax_two]	= Parallax Two
+regions[parallax_five]	= Parallax Five
+regions[section_one]	= Section One
+regions[content_bottom]	= Content Bottom
+
+regions[sidebar_first]	= Sidebar Left
+regions[sidebar_second]	= Sidebar Right
+
+regions[footer_top]		= Footer Top
+regions[footer]			= Footer
+
+regions[page_top]		= Page Top
+regions[page_bottom]	= Page Bottom
+
+regions[highlighted]	= Highlighted
+
+
+; Options --------------------------------------------------------------------
+; these are the checkboxes that are available on the theme settings page.
+
+; General settings
+settings[toggle_logo]								= 1
+settings[toggle_name]								= 0
+settings[toggle_slogan]								= 1
+settings[toggle_node_user_picture]					= 0
+settings[toggle_comment_user_picture]				= 1
+settings[toggle_comment_user_verification]			= 1
+settings[toggle_favicon]							= 1
+settings[toggle_main_menu]							= 1
+settings[toggle_secondary_menu]						= 1
+
+settings[default_favicon]							= 1
+
+settings[default_logo]								= 1
+
+settings[theme1000_sticky_menu]						= 1
+
+; Breadcrumb settings
+settings[theme1000_breadcrumb_show]					= 0
+settings[theme1000_breadcrumb_hideonlyfront]			= 1
+settings[theme1000_breadcrumb_showtitle]				= 1
+settings[theme1000_breadcrumb_separator]				= " &#187; "
+
+; Regions settings
+settings[theme1000_header_bg_type]					= 'none'
+settings[theme1000_header_bg_img][fid]				= 2
+settings[theme1000_header_bg_parallax]				= 0
+settings[theme1000_header_bg_video]					= "http://youtu.be/2kodXWejuy0"
+settings[theme1000_header_bg_video_start]			= 0
+settings[theme1000_header_fullwidth]					= 1
+
+settings[theme1000_header_bottom_bg_type]			= 'none'
+settings[theme1000_header_bottom_bg_img][fid]		= 2
+settings[theme1000_header_bottom_bg_parallax]		= 0
+settings[theme1000_header_bottom_bg_video]			= "http://youtu.be/2kodXWejuy0"
+settings[theme1000_header_bottom_bg_video_start]		= 0
+settings[theme1000_header_bottom_fullwidth]			= 0
+
+settings[theme1000_content_top_bg_type]				= 'none'
+settings[theme1000_content_top_bg_img][fid]			= 2
+settings[theme1000_content_top_bg_parallax]			= 0
+settings[theme1000_content_top_bg_video]				= "http://youtu.be/2kodXWejuy0"
+settings[theme1000_content_top_bg_video_start]		= 0
+settings[theme1000_content_top_fullwidth]			= 0
+
+settings[theme1000_parallax_one_bg_type]				= 'image'
+settings[theme1000_parallax_one_bg_img][fid]			= 21
+settings[theme1000_parallax_one_bg_parallax]			= 1
+settings[theme1000_parallax_one_bg_video]				= "http://youtu.be/2kodXWejuy0"
+settings[theme1000_parallax_one_bg_video_start]		= 0
+settings[theme1000_parallax_one_fullwidth]			= 0
+
+settings[theme1000_parallax_three_bg_type]				= 'image'
+settings[theme1000_parallax_three_bg_img][fid]			= 30
+settings[theme1000_parallax_three_bg_parallax]			= 1
+settings[theme1000_parallax_three_bg_video]				= "http://youtu.be/2kodXWejuy0"
+settings[theme1000_parallax_three_bg_video_start]		= 0
+settings[theme1000_parallax_three_fullwidth]			= 0
+
+settings[theme1000_parallax_four_bg_type]				= 'image'
+settings[theme1000_parallax_four_bg_img][fid]			= 43
+settings[theme1000_parallax_four_bg_parallax]			= 1
+settings[theme1000_parallax_four_bg_video]				= "http://youtu.be/2kodXWejuy0"
+settings[theme1000_parallax_four_bg_video_start]		= 0
+settings[theme1000_parallax_four_fullwidth]			= 0
+
+settings[theme1000_parallax_two_bg_type]				= 'video'
+settings[theme1000_parallax_two_bg_img][fid]			= 2
+settings[theme1000_parallax_two_bg_parallax]			= 1
+settings[theme1000_parallax_two_bg_video]				= "http://youtu.be/YFKvL-ODa8k"
+settings[theme1000_parallax_two_bg_video_start]		= 0
+settings[theme1000_parallax_two_fullwidth]			= 0
+
+settings[theme1000_parallax_five_bg_type]				= 'image'
+settings[theme1000_parallax_five_bg_img][fid]			= 47
+settings[theme1000_parallax_five_bg_parallax]			= 1
+settings[theme1000_parallax_five_bg_video]				= "http://youtu.be/2kodXWejuy0"
+settings[theme1000_parallax_five_bg_video_start]		= 0
+settings[theme1000_parallax_five_fullwidth]			= 0
+
+settings[theme1000_section_one_bg_type]			= 'none'
+settings[theme1000_section_one_bg_img][fid]		= 2
+settings[theme1000_section_one_bg_parallax]		= 0
+settings[theme1000_section_one_bg_video]			= "http://youtu.be/2kodXWejuy0"
+settings[theme1000_section_one_bg_video_start]	= 0
+settings[theme1000_section_one_fullwidth]			= 0
+
+settings[theme1000_content_bottom_bg_type]			= 'none'
+settings[theme1000_content_bottom_bg_img][fid]		= 2
+settings[theme1000_content_bottom_bg_parallax]		= 0
+settings[theme1000_content_bottom_bg_video]			= "http://youtu.be/2kodXWejuy0"
+settings[theme1000_content_bottom_bg_video_start]	= 0
+settings[theme1000_content_bottom_fullwidth]			= 0
+
+settings[theme1000_footer_top_bg_type]				= 'none'
+settings[theme1000_footer_top_bg_img][fid]			= 2
+settings[theme1000_footer_top_bg_parallax]			= 0
+settings[theme1000_footer_top_bg_video]				= "http://youtu.be/2kodXWejuy0"
+settings[theme1000_footer_top_bg_video_start]		= 0
+settings[theme1000_footer_top_fullwidth]				= 0
+
+; Blog settings
+settings[theme1000_blog_title]						= ""
+
+; Custom CSS
+settings[theme1000_custom_css]						= ""
